@@ -10,7 +10,7 @@ import { createStore, applyMiddleware } from 'redux';
 //allowing us to dispatch the action at any point in time, instead of instantly
 import reduxThunk from 'redux-thunk';
 //Semantic UI React CSS
-import 'semantic-ui-css/semantic.min.css';
+//import 'semantic-ui-css/semantic.min.css';
 
 import App from './components/App';
 import reducers from './reducers'; //import the combineReducers for createStore
