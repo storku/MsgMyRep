@@ -4,18 +4,18 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 8rem;
 }
 
 .App-header {
   background-color: #4fc5b6;
-  height: 80px;
-  padding: 20px;
+  height: 8rem;
+  padding: 2rem;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .App-intro {
@@ -64,10 +64,10 @@
 /*paragraph*/
 p {
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #2c2d30;
   letter-spacing: 0;
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 
 h4 {
@@ -75,38 +75,38 @@ h4 {
 
 /*the Box class in the FrontPage*/
 .Box-outer {
-  width: 800px;
-  margin: 50px auto;
+  width: 80rem;
+  margin: 5rem auto;
 }
 
 .Box-inner {
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
-  padding: 50px 80px;
-  margin-bottom: 100px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1.1rem 2.2rem 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+  padding: 5rem 8rem;
+  margin-bottom: 10rem;
 }
 
 .FormInput {
-  border: 3px solid #4fc5b6;
+  border: 0.3rem solid #4fc5b6;
   border-radius: 3%;
 }
 
 .FormField {
   width: 100%;
-  margin: 0 auto 1em auto !important;
+  margin: 0 auto 1rem auto !important;
 }
 
 /*RepsPage*/
 .ui.card {
-  width: 200px;
-  border: 3px solid #4fc5b6;
+  width: 20rem;
+  border: 0.3rem solid #4fc5b6;
   border-radius: 2%;
 }
 
 .RepImage {
   width: inherit;
-  border: 3px solid #4fc5b6;
+  border: 0.3rem solid #4fc5b6;
   border-radius: 50%;
 }
