@@ -42,9 +42,13 @@ class AutoDetect extends Component {
         )}
         <br />
         <br />
-        <Button onClick={this.handleClick} primary className="Button-left">
+        <a
+          href="#"
+          className="btn btn-white btn-animated"
+          onClick={this.handleClick}
+        >
           Go!
-        </Button>
+        </a>
       </div>
     );
   }

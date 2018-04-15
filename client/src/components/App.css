@@ -1,10 +1,64 @@
-.App {
-  text-align: center;
+/*for the buttons on the front page*/
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem; /*make the corners round*/
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 8rem;
+/*moves it up and gives it shadow when hovered*/
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #000;
+  color: #fff;
+}
+
+/*absolute position refers to first parent element with relative position
+this element refers to the relative position in .btn*/
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+/*remember to put animate (transition: all 0.4s;) in the original state*/
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; /*fades out the element*/
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-header {

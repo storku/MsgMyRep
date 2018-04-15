@@ -1,3 +1,12 @@
+/*Remove default values to all elements*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*forces all elements to inherit box-sizing from .body*/
+}
+
 /*62.5% of 16px (default browser font size) is 10px,
 which is used to calculate all the rem values below*/
 html {
@@ -5,7 +14,12 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  /*margin: 0;
+  padding: 0;*/
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+
+  box-sizing: border-box; /*make width and height count everything not just content*/
 }
