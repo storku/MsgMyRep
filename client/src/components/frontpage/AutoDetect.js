@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import { Button, Icon } from 'semantic-ui-react';
-import { withRouter } from 'react-router-dom'; //required to use this.props.history.push
+import { withRouter } from 'react-router-dom'; // required to use this.props.history.push
+import * as actions from '../../actions';
 
 class AutoDetect extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      detecting: false
+      detecting: false,
     };
 
     this.handleClick = this.handleClick.bind(this);
