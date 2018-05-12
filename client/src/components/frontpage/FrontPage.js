@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import AutoDetect from './AutoDetect';
 import EnterZipcode from './EnterZipcode';
-
+//
 class FrontPage extends Component {
   render() {
     return (
